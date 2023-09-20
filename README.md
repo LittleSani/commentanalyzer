@@ -1,0 +1,11 @@
+# commentanalyzer
+### Using NLP(Natural Language Processing), RNNs, Machine Learning
+
+## Synopsis
+Our model aims to take in the comments from the comment section on youtube and to sort them out into negative, postive and neutral ones. This will help the creator to study the response on his videos and to improve his content / interactions with the audience accordingly. It will also help the audience to find the best content on youtube as since the dislike button has been removed its been hard to find the ratio of positive to negative response on an video, our model can serve as an extension to the browser and can tell real time statistics to the user so he can decide whether to spend his valuable time watching the video
+
+## How it works
+We use a module named youtube_comment_downloader which helps us to import the comments of youtube video inside our python file for analysis of them. Now once the comment has been imported we can use our machine learning algorithm to analyse the comment data . Since we didn't had the resources to train and develop our own model we used a pretrained model called as textblob for doing the sentiment analysis . In case if we would have got the access to the resources we would have sorted the comments as positive and negative based on their like/dislike ratio of comments and then feed it forward into the model as the training case data . This model would have worked quite better and provide much better output as it would have been made especially for the youtube website and the data available on it.  So once the comments have went throught the text blob , it outputs whether the each comment is negative/postive/neutral and stores it into the dataframe. we can use groupby method so count the no. of positive, negative and neutral comments and output them.
+
+## Please Note
+“Please note that we plan to integrate our algorithm with our frontend code using the Flask framework. Although we are currently inexperienced with web frameworks, we have successfully created an algorithm that can analyze YouTube comments with high accuracy. We are actively learning Flask and working towards building a complete website with a fully functional backend that can analyze YouTube comments. If our project is selected, we will be able to deliver a website with a fully working backend that can analyze YouTube comments.
