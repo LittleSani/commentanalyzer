@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Sentiment Analysis</title>
+    <link rel="stylesheet" href="Webpage.css">
+</head>
+
+<body>
+    <header>
+        <h1>Social Media Sentiment Analysis</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>Why Sentiment Analysis Matters</h2>
+                <p>Sentiment analysis helps businesses and individuals understand public opinion and emotional responses
+                    to products, services, or topics. It can provide valuable insights for decision-making, marketing
+                    strategies, and reputation management.</p>
+                <img src="C:\Users\dhend\OneDrive\Desktop\WhatsApp Image 2023-09-18 at 13.50.19.jpg"
+                    alt="Sentiment Analysis" class="intro-image">
+            </section>
+            <form id="sentimentForm">
+                <label for="accountLink">Enter the link to the social media account or webpage:</label>
+                <input type="text" id="accountLink" name="accountLink" required>
+                <button type="submit">Analyze</button>
+            </form>
+            <div id="result" class="hidden">
+                <h2>Analysis Result:</h2>
+                
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="Webpage.js"></script>
+</body>
+
+</html>
